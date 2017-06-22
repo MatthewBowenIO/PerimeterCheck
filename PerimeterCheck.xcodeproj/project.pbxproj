@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66475A4B1ED368C800434826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475A4A1ED368C800434826 /* AppDelegate.swift */; };
+		66475A4D1ED368C800434826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475A4C1ED368C800434826 /* ViewController.swift */; };
+		66475A501ED368C800434826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66475A4E1ED368C800434826 /* Main.storyboard */; };
+		66475A521ED368C800434826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66475A511ED368C800434826 /* Assets.xcassets */; };
+		66475A551ED368C800434826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66475A531ED368C800434826 /* LaunchScreen.storyboard */; };
+		66475A601ED368C800434826 /* PerimeterCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475A5F1ED368C800434826 /* PerimeterCheckTests.swift */; };
+		66475A6B1ED368C800434826 /* PerimeterCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66475A6A1ED368C800434826 /* PerimeterCheckUITests.swift */; };
+		66475A7A1ED36B3A00434826 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66475A791ED36B3A00434826 /* MapKit.framework */; };
+		66475A7C1ED36E5300434826 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66475A7B1ED36E5300434826 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66475A5C1ED368C800434826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66475A3F1ED368C800434826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66475A461ED368C800434826;
+			remoteInfo = PerimeterCheck;
+		};
+		66475A671ED368C800434826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66475A3F1ED368C800434826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66475A461ED368C800434826;
+			remoteInfo = PerimeterCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66475A471ED368C800434826 /* PerimeterCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerimeterCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66475A4A1ED368C800434826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66475A4C1ED368C800434826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66475A4F1ED368C800434826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66475A511ED368C800434826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66475A541ED368C800434826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66475A561ED368C800434826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66475A5B1ED368C800434826 /* PerimeterCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerimeterCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66475A5F1ED368C800434826 /* PerimeterCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterCheckTests.swift; sourceTree = "<group>"; };
+		66475A611ED368C800434826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66475A661ED368C800434826 /* PerimeterCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerimeterCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66475A6A1ED368C800434826 /* PerimeterCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterCheckUITests.swift; sourceTree = "<group>"; };
+		66475A6C1ED368C800434826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66475A791ED36B3A00434826 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		66475A7B1ED36E5300434826 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66475A441ED368C800434826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66475A7C1ED36E5300434826 /* CoreLocation.framework in Frameworks */,
+				66475A7A1ED36B3A00434826 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A581ED368C800434826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A631ED368C800434826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66475A3E1ED368C800434826 = {
+			isa = PBXGroup;
+			children = (
+				66475A491ED368C800434826 /* PerimeterCheck */,
+				66475A5E1ED368C800434826 /* PerimeterCheckTests */,
+				66475A691ED368C800434826 /* PerimeterCheckUITests */,
+				66475A481ED368C800434826 /* Products */,
+				66475A781ED36B3A00434826 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66475A481ED368C800434826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66475A471ED368C800434826 /* PerimeterCheck.app */,
+				66475A5B1ED368C800434826 /* PerimeterCheckTests.xctest */,
+				66475A661ED368C800434826 /* PerimeterCheckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66475A491ED368C800434826 /* PerimeterCheck */ = {
+			isa = PBXGroup;
+			children = (
+				66475A4A1ED368C800434826 /* AppDelegate.swift */,
+				66475A4C1ED368C800434826 /* ViewController.swift */,
+				66475A4E1ED368C800434826 /* Main.storyboard */,
+				66475A511ED368C800434826 /* Assets.xcassets */,
+				66475A531ED368C800434826 /* LaunchScreen.storyboard */,
+				66475A561ED368C800434826 /* Info.plist */,
+			);
+			path = PerimeterCheck;
+			sourceTree = "<group>";
+		};
+		66475A5E1ED368C800434826 /* PerimeterCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				66475A5F1ED368C800434826 /* PerimeterCheckTests.swift */,
+				66475A611ED368C800434826 /* Info.plist */,
+			);
+			path = PerimeterCheckTests;
+			sourceTree = "<group>";
+		};
+		66475A691ED368C800434826 /* PerimeterCheckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66475A6A1ED368C800434826 /* PerimeterCheckUITests.swift */,
+				66475A6C1ED368C800434826 /* Info.plist */,
+			);
+			path = PerimeterCheckUITests;
+			sourceTree = "<group>";
+		};
+		66475A781ED36B3A00434826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66475A7B1ED36E5300434826 /* CoreLocation.framework */,
+				66475A791ED36B3A00434826 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66475A461ED368C800434826 /* PerimeterCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66475A6F1ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheck" */;
+			buildPhases = (
+				66475A431ED368C800434826 /* Sources */,
+				66475A441ED368C800434826 /* Frameworks */,
+				66475A451ED368C800434826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerimeterCheck;
+			productName = PerimeterCheck;
+			productReference = 66475A471ED368C800434826 /* PerimeterCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66475A5A1ED368C800434826 /* PerimeterCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66475A721ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheckTests" */;
+			buildPhases = (
+				66475A571ED368C800434826 /* Sources */,
+				66475A581ED368C800434826 /* Frameworks */,
+				66475A591ED368C800434826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66475A5D1ED368C800434826 /* PBXTargetDependency */,
+			);
+			name = PerimeterCheckTests;
+			productName = PerimeterCheckTests;
+			productReference = 66475A5B1ED368C800434826 /* PerimeterCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66475A651ED368C800434826 /* PerimeterCheckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66475A751ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheckUITests" */;
+			buildPhases = (
+				66475A621ED368C800434826 /* Sources */,
+				66475A631ED368C800434826 /* Frameworks */,
+				66475A641ED368C800434826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66475A681ED368C800434826 /* PBXTargetDependency */,
+			);
+			name = PerimeterCheckUITests;
+			productName = PerimeterCheckUITests;
+			productReference = 66475A661ED368C800434826 /* PerimeterCheckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66475A3F1ED368C800434826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Matthew Bowen";
+				TargetAttributes = {
+					66475A461ED368C800434826 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = TL6NQH23F7;
+						ProvisioningStyle = Automatic;
+					};
+					66475A5A1ED368C800434826 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66475A461ED368C800434826;
+					};
+					66475A651ED368C800434826 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66475A461ED368C800434826;
+					};
+				};
+			};
+			buildConfigurationList = 66475A421ED368C800434826 /* Build configuration list for PBXProject "PerimeterCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66475A3E1ED368C800434826;
+			productRefGroup = 66475A481ED368C800434826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66475A461ED368C800434826 /* PerimeterCheck */,
+				66475A5A1ED368C800434826 /* PerimeterCheckTests */,
+				66475A651ED368C800434826 /* PerimeterCheckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66475A451ED368C800434826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66475A551ED368C800434826 /* LaunchScreen.storyboard in Resources */,
+				66475A521ED368C800434826 /* Assets.xcassets in Resources */,
+				66475A501ED368C800434826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A591ED368C800434826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A641ED368C800434826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66475A431ED368C800434826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66475A4D1ED368C800434826 /* ViewController.swift in Sources */,
+				66475A4B1ED368C800434826 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A571ED368C800434826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66475A601ED368C800434826 /* PerimeterCheckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66475A621ED368C800434826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66475A6B1ED368C800434826 /* PerimeterCheckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66475A5D1ED368C800434826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66475A461ED368C800434826 /* PerimeterCheck */;
+			targetProxy = 66475A5C1ED368C800434826 /* PBXContainerItemProxy */;
+		};
+		66475A681ED368C800434826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66475A461ED368C800434826 /* PerimeterCheck */;
+			targetProxy = 66475A671ED368C800434826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66475A4E1ED368C800434826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66475A4F1ED368C800434826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66475A531ED368C800434826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66475A541ED368C800434826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66475A6D1ED368C800434826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66475A6E1ED368C800434826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66475A701ED368C800434826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TL6NQH23F7;
+				INFOPLIST_FILE = PerimeterCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		66475A711ED368C800434826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TL6NQH23F7;
+				INFOPLIST_FILE = PerimeterCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		66475A731ED368C800434826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerimeterCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerimeterCheck.app/PerimeterCheck";
+			};
+			name = Debug;
+		};
+		66475A741ED368C800434826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerimeterCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerimeterCheck.app/PerimeterCheck";
+			};
+			name = Release;
+		};
+		66475A761ED368C800434826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PerimeterCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PerimeterCheck;
+			};
+			name = Debug;
+		};
+		66475A771ED368C800434826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PerimeterCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThumbSnackApps.PerimeterCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PerimeterCheck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66475A421ED368C800434826 /* Build configuration list for PBXProject "PerimeterCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66475A6D1ED368C800434826 /* Debug */,
+				66475A6E1ED368C800434826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66475A6F1ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66475A701ED368C800434826 /* Debug */,
+				66475A711ED368C800434826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66475A721ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66475A731ED368C800434826 /* Debug */,
+				66475A741ED368C800434826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66475A751ED368C800434826 /* Build configuration list for PBXNativeTarget "PerimeterCheckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66475A761ED368C800434826 /* Debug */,
+				66475A771ED368C800434826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66475A3F1ED368C800434826 /* Project object */;
+}

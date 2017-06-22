@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PerimeterCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m7y-79-b4U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="576"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHt-Tu-ngP">
+                                <rect key="frame" x="16" y="617" width="49" height="30"/>
+                                <state key="normal" title="Set Pin"/>
+                                <connections>
+                                    <action selector="drawLine:forEvent:" destination="BYZ-38-t0r" eventType="touchDownRepeat" id="Bgb-jI-hJu"/>
+                                    <action selector="setPin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLC-bn-WJq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enK-RA-E1Q">
+                                <rect key="frame" x="289" y="617" width="71" height="30"/>
+                                <state key="normal" title="Save View"/>
+                                <connections>
+                                    <action selector="saveView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0hw-y8-t8U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-Xg-wJg">
+                                <rect key="frame" x="144" y="617" width="86" height="30"/>
+                                <state key="normal" title="Draw Border"/>
+                                <connections>
+                                    <action selector="drawBorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88l-bA-7Lz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m7y-79-b4U" secondAttribute="bottom" constant="71" id="7o4-Gf-W1v"/>
+                            <constraint firstItem="enK-RA-E1Q" firstAttribute="top" secondItem="m7y-79-b4U" secondAttribute="bottom" constant="21" id="9yV-D0-jgg"/>
+                            <constraint firstItem="NHt-Tu-ngP" firstAttribute="top" secondItem="m7y-79-b4U" secondAttribute="bottom" constant="21" id="DL4-KW-A5B"/>
+                            <constraint firstItem="m7y-79-b4U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SVM-Ol-nZO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NHt-Tu-ngP" secondAttribute="bottom" constant="20" id="ZaH-74-tEd"/>
+                            <constraint firstItem="8xh-Xg-wJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="ZfX-Or-Jn4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8xh-Xg-wJg" secondAttribute="bottom" constant="20" id="ZoF-lj-WYT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NHt-Tu-ngP" secondAttribute="leading" id="hVt-9Q-APS"/>
+                            <constraint firstAttribute="trailing" secondItem="m7y-79-b4U" secondAttribute="trailing" id="jyv-U5-gUr"/>
+                            <constraint firstItem="8xh-Xg-wJg" firstAttribute="top" secondItem="m7y-79-b4U" secondAttribute="bottom" constant="21" id="lVJ-OR-h8A"/>
+                            <constraint firstItem="m7y-79-b4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mdA-NE-hQd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="enK-RA-E1Q" secondAttribute="bottom" constant="20" id="oKc-g7-v8A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8xh-Xg-wJg" secondAttribute="trailing" constant="129" id="phK-oz-VHf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="enK-RA-E1Q" secondAttribute="trailing" constant="-1" id="sb5-wu-Qrg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="m7y-79-b4U" id="fiO-gl-e9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
